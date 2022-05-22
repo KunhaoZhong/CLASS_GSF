@@ -5,21 +5,21 @@ A modified version of CLASS with generalized scalar field written by Kunhao Zhon
 The code is inspried by [hi-class](http://miguelzuma.github.io/hi_class_public/), which can calculate any Horndeski model using EFT. Non-conanical scalar field is a subset of Horndeski theory, but CLASS_GSF will evolve the full perturbation equations of the scalar field instead of using EFT.
 
 
+## Example with dilatonic ghost field(dgf) model
+
+Here's an example of dgf models, it's background evolution and its effect on CMB power spectrum.
+
+![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot2.png)
+![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot1.png)<!-- .element height="5%" width="5%" -->
+
+
 ## Equations used in GSF perturbation
 
-
-
-
-
+![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/pert_eq.png)<!-- .element height="9%" width="10%" -->
 The full equations that CLASS_GSF can be found in my notes. The perturbation equations are given in synchronous gauge, where I can't find it in any publication. The peturbative equations are given in Newtonian gauge by https://arxiv.org/abs/1109.1308v3. I use `Xpand` to cross check my calculations, and tested with several examples using hi-class.
 
 Currently there are six parameters in this modification. param(0) is for model selection. parameter 1-3 is for initial condtions that people can easily choose by themselves, and parameter 5-6 is the parameters for different GSF model. Most of the k-essence models only need two parameters, but you can follow the routine to add more parameters.
 
-
-
-## Example with dilatonic ghost field(dgf) model
-
-Here's an example of dgf models, it's background evolution and its effect on CMB power spectrum.
 
 
 ## Additional features with CLASS_GSF
