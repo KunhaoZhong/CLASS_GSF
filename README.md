@@ -1,3 +1,48 @@
+# CLASS_GSF: CLASS with Generalized Scalar Field
+
+A modified version of CLASS with generalized scalar field written by Kunhao Zhong (kunhao.zhong@stonyrbook.edu). Please email me if there are any questions or mistakes.
+
+The code is inspried by [hi-class](http://miguelzuma.github.io/hi_class_public/), which can calculate any Horndeski model using EFT. Non-conanical scalar field is a subset of Horndeski theory, but CLASS_GSF will evolve the full perturbation equations of the scalar field instead of using EFT.
+
+
+## Equations used in GSF perturbation
+
+
+
+
+
+The full equations that CLASS_GSF can be found in my notes. The perturbation equations are given in synchronous gauge, where I can't find it in any publication. The peturbative equations are given in Newtonian gauge by https://arxiv.org/abs/1109.1308v3. I use `Xpand` to cross check my calculations, and tested with several examples using hi-class.
+
+Currently there are six parameters in this modification. param(0) is for model selection. parameter 1-3 is for initial condtions that people can easily choose by themselves, and parameter 5-6 is the parameters for different GSF model. Most of the k-essence models only need two parameters, but you can follow the routine to add more parameters.
+
+
+
+## Example with dilatonic ghost field(dgf) model
+
+Here's an example of dgf models, it's background evolution and its effect on CMB power spectrum.
+
+
+## Additional features with CLASS_GSF
+
+In this version, we add a second `gsf` called `gsf2` that allows users to have an additional scalar field. This scalar field will not be used in the shooting method that class use to satify the closre relation today(a=1), thus it can be served as an scalar field in the Early Dark Energy(EDE) model. 
+
+On the other hand, both of the two scalar fields can be used as the scalar field Dark Matter, depending on what the user want for the description of DE.
+
+
+## How to write your own GSF model
+Users can modify the `gsf_functions` in the end of `background.c` module, which requires both the Lagragian and derivatives. According to the perturbation theory of GSF, no higher order term is needed to calcualte the first order perturbation. Then no other modification is required. The code will calculate the full background and perturbation evolution of the scalar field. 
+
+It is easy to add extra parameters if needed, just follow the routine used in `gsf_parameters`.
+
+The Python wrapper is now working with cobaya. But you may need to modify it if you want extra parameters or other sampling method (if it's too complicated in YAML file).
+
+
+
+
+
+
+=============
+
 CLASS: Cosmic Linear Anisotropy Solving System  {#mainpage}
 ==============================================
 
