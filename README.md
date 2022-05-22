@@ -7,7 +7,7 @@ The code is inspried by [hi-class](http://miguelzuma.github.io/hi_class_public/)
 
 ## Example with dilatonic ghost field(dgf) model
 
-Here's an example of dgf models, it's background evolution and its effect on CMB power spectrum.
+Here's an example of dgf models, with its background evolution and its effect on matter power spectrum. The details about this model can be find at https://arxiv.org/abs/hep-th/0405054. 
 
 ![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot2.png)
 ![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot1.png)<!-- .element height="5%" width="5%" -->
