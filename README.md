@@ -5,13 +5,6 @@ A modified version of CLASS with generalized scalar field written by Kunhao Zhon
 The code is inspried by [hi-class](http://miguelzuma.github.io/hi_class_public/), which can calculate any Horndeski model using EFT. Non-conanical scalar field is a subset of Horndeski theory, but CLASS_GSF will evolve the full perturbation equations of the scalar field instead of using EFT.
 
 
-## Example with dilatonic ghost field(dgf) model
-
-Here's an example of dgf models, with its background evolution and its effect on matter power spectrum. The details about this model can be find at https://arxiv.org/abs/hep-th/0405054. 
-
-![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot2.png)
-![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot1.png)<!-- .element height="5%" width="5%" -->
-
 
 ## Equations used in GSF perturbation
 
@@ -37,7 +30,12 @@ It is easy to add extra parameters if needed, just follow the routine used in `g
 The Python wrapper is now working with cobaya. But you may need to modify it if you want extra parameters or other sampling method (if it's too complicated in YAML file).
 
 
+## Example with dilatonic ghost field(dgf) model
 
+Here's an example of dgf models, with its background evolution and its effect on matter power spectrum. The details about this model can be find at https://arxiv.org/abs/hep-th/0405054. 
+
+![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot2.png | width=10)
+![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot1.png | width=10)
 
 
 
