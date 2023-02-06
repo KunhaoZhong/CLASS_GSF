@@ -34,10 +34,8 @@ The Python wrapper is now working with cobaya. But you may need to modify it if 
 
 Here's an example of dgf models, with its background evolution and its effect on matter power spectrum. The details about this model can be find at https://arxiv.org/abs/hep-th/0405054. 
 
-![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot2.png | width=10)
-![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot1.png | width=10)
-
-
+![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot2.png)<!-- .element height="9%" width="10%" -->
+![](https://github.com/KunhaoZhong/CLASS_GSF/blob/main/dgf_plot1.png)<!-- .element height="9%" width="10%" -->
 
 =============
 
